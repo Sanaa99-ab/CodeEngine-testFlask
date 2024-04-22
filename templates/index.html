@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Speechify-Login</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap">
+  <link rel="stylesheet" href="../static/index.css">
+  <style>
+    form {
+      margin-bottom: 10px; /* Réduction de la marge en bas du formulaire */
+    }
+  </style>
+   <style>
+    form {
+      margin-bottom: 10px;
+    }
+    
+    input[type="username"],
+    input[type="password"] {
+      background-color: white; /* Définit la couleur de fond des champs de saisie à blanc */
+    }
+    .login {
+    width: 100%; /* Utilise 100% de la largeur disponible */
+  }
+  </style>
+  
+</head>
+
+<body>
+<div class="screen-1">
+  <div class="logo">
+    <img src="../static/images/logo.avif" alt="Speechify Logo" width="300" height="300">
+  </div>
+  <br>
+  <form action="/templates/index.html" method="POST"> <!-- Ajout du formulaire avec action vers la route /login -->
+    <div class="username">
+      <label for="username">Username</label>
+      <div class="sec-2">
+        <ion-icon name="mail-outline"></ion-icon>
+        <input type="username" name="username" placeholder="Username"/>
+      </div>
+    </div>
+    <br>
+    <div class="password">
+      <label for="password">Password</label>
+      <div class="sec-2">
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        <input class="pas" type="password" name="password" placeholder="*******"/>
+        <ion-icon class="show-hide" name="eye-outline"></ion-icon>
+      </div>
+    </div>
+    <br>
+    <button type="submit" class="login">Login</button> <!-- Changement du bouton en type="submit" -->
+  </form>
+  <div class="signup">
+    <p>No account? <a href="/templates/Signup.html">Sign up</a></p> <!-- Correction du lien pour la page de signup -->
+  </div>
+</div>  
+</body>
+</html>

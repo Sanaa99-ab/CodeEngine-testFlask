@@ -1,0 +1,140 @@
+* {
+  font-family: "Poppins";
+}
+
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0ece2;
+  height: 100vh;
+}
+
+.screen-1 {
+  background: #dfd3c3;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 0 0 2em #dfd3c3;
+  gap: 2em;
+}
+
+.screen-1 .logo {
+  margin-top: -3em;
+}
+
+.screen-1 .logo img {
+  width: 300px; 
+  height: 300px; 
+  border-radius: 50%; 
+}
+
+.screen-1 .username {
+  background: white;
+  box-shadow: 0 0 2em #dfd3c3;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 20px;
+  color: #596e79; /* Adapté à la quatrième couleur */
+  margin-top: -3em;
+}
+.screen-1 .username input {
+  outline: none;
+  border: none;
+}
+.screen-1 .username input::-moz-placeholder {
+  color:  #596e79; 
+  font-size: 0.9em;
+}
+.screen-1 .username input:-ms-input-placeholder {
+  color:  #596e79; 
+  font-size: 0.9em;
+}
+.screen-1 .username input::placeholder {
+  color:  #596e79; 
+  font-size: 0.9em;
+}
+.screen-1 .username ion-icon {
+  color:  #596e79;  /* Adapted to fourth-color */
+  margin-bottom: -0.2em;
+}
+.screen-1 .password {
+  background: white;
+  box-shadow: 0 0 2em #dfd3c3; 
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 20px;
+  color:  #596e79;  /* Adapted to fourth-color */
+}
+.screen-1 .password input {
+  outline: none;
+  border: none;
+}
+.screen-1 .password input::-moz-placeholder {
+  color: #596e79; 
+  font-size: 0.9em;
+}
+.screen-1 .password input:-ms-input-placeholder {
+  color: #596e79; 
+  font-size: 0.9em;
+}
+.screen-1 .password input::placeholder {
+  color: #596e79; 
+  font-size: 0.9em;
+}
+.screen-1 .password ion-icon {
+  color: #596e79;  /* Adapted to fourth-color */
+  margin-bottom: -0.2em;
+}
+.screen-1 .password .show-hide {
+  margin-right: -5em;
+}
+.screen-1 .login {
+  padding: 1em;
+  background: #596e79; /* Adapted to fourth-color */
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+}
+.screen-1 .footer {
+  display: flex;
+  font-size: 0.7em;
+  color: #5e5e5e;
+  gap: 14em;
+  padding-bottom: 10em;
+}
+.screen-1 .footer span {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.signup {
+  margin-top: 1em;
+  text-align: center;
+}
+.signup p {
+  color: #5e5e5e; 
+  font-size: 0.9em; 
+}
+.signup a {
+  color: #596e79; 
+  text-decoration: underline; 
+}
+.signup a:hover {
+  color: #596e79; 
+}
+

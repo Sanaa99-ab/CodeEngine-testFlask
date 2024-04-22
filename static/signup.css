@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0ece2; /* Adapté à la première couleur */
+}
+
+.wrapper {
+  position: relative;
+  max-width: 430px;
+  width: 100%;
+  background: #dfd3c3; /* Adapté à la deuxième couleur */
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper .header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.wrapper .header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.wrapper .header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #596e79; /* Adapté à la quatrième couleur */
+}
+
+.wrapper h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #596e79; /* Adapté à la quatrième couleur */
+  margin-bottom: 20px;
+}
+
+.wrapper form .input-box {
+  height: 52px;
+  margin: 18px 0;
+}
+
+.wrapper form .input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #c7b198; /* Adapté à la troisième couleur */
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.wrapper form .input-box input:focus,
+.wrapper form .input-box input:valid {
+  border-color: #596e79; /* Adapté à la quatrième couleur */
+}
+
+.wrapper form .input-box.button input {
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #596e79; /* Adapté à la quatrième couleur */
+  cursor: pointer;
+}
+
+.wrapper form .input-box.button input:hover {
+  background: #758892; /* Nouvelle couleur ajoutée */
+}
+
+.wrapper form .text h3 {
+  color: #596e79; 
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.wrapper form .text h3 a {
+  color: #758892;; 
+  text-decoration: none;
+}
+
+.wrapper form .text h3 a:hover {
+  text-decoration: underline;
+}

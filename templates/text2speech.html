@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech Conversion</title>
+    <link rel="stylesheet" href="../static/text2speech.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../static/images/logo.avif" alt="Speechify Logo">
+            <span class="app-name">Speechify</span>
+        </div>
+        <div class="header-buttons">
+            <button><a id="home-btn" href="/dashboard">Home</a></button>
+            <button><a id="logout-btn" href="/">Logout</a></button>
+        </div>
+    </header>
+    <div class="description">
+        <p>Convert written text into spoken words with Speechify! Choose a language, import a file, write text, and get the audio output.</p>
+    </div>
+    <div class="container">
+        <div class="top-controls">
+            <div class="language-box">
+                <label for="language-select">Select Language:</label>
+                <select id="language-select">
+                    <option value="en-US_AllisonV3Voice">English (US)</option>
+                    <option value="fr-FR_ReneeV3Voice">French</option>
+                    <option value="ar-MS_OmarVoice">Arabic</option>
+                    <option value="es-ES_EnriqueV3Voice">Spanish</option>
+                </select><br>
+            </div>
+            <div class="file-upload">
+                <label for="upload-file">Select File:</label>
+                <input type="file" id="upload-file" accept=".txt"><br>
+            </div>
+        </div>
+        <div class="write-text">
+            <label for="text-to-read">Enter text to convert:</label><br>
+            <textarea id="text-to-read" rows="10" cols="50"></textarea><br>
+        </div>
+        <div class="buttons">
+            <button id="convert-button">Convert to Speech</button>
+            <a id="download-button" href="/output.wav" download><button>Download Audio</button></a>
+        </div>
+        <div class="result-box">
+            <h3>Converted Audio:</h3>
+            <audio id="audio" controls>
+                <source src="../output.wav" type="audio/wav">
+            </audio>
+        </div>
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
